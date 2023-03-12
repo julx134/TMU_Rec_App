@@ -4,15 +4,53 @@
     margin: 0;
   }
 
-.LoginBTN {
-  width: 20em;
-  height: 6.5em;
-  border-radius: 8px;
-  border: none;
-  background-color: #FFDC00;
-  margin-top: 45%;
-  cursor: pointer;
-  z-index: 10;
+.slider {
+  background-color: #004C9B;
 }
+
+.ant-menu {
+  color: white;
+  background-color: #004C9B;
+}
+
+.ant-menu-item, .ant-menu-submenu-title{
+  color: white !important;
+}
+
+.ant-menu-submenu-selected > .ant-menu-submenu-title{
+  color: #FFB81C !important;
+}
+
+.ant-menu-item-selected {
+  background-color: #004C9B !important;
+  color: #FFB81C !important;
+}
+
+
+.ant-menu-item-active:active {
+  background-color: #004C9B !important;
+}
+
+.ant-menu-item > span > svg, .ant-menu-submenu-title > span > svg {
+  font-size: 20px;
+  margin-right: 10px;
+}
+
+.ant-menu-title-content {
+  font-size: 1.5rem;
+  margin-left: 30px;
+}
+
+.ant-menu-item-only-child > .ant-menu-title-content{
+  font-size: 1.1rem;
+}
+
+
+
+
+
+
+
+  
 
 

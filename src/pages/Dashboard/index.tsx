@@ -8,6 +8,8 @@ import {
     SettingOutlined
 } from '@ant-design/icons';
 import { useRouter } from "next/router";
+import SignoutBTN from "@/components/Navbar/Signout";
+import NavHeader from "@/components/Navbar/NavHeader";
 const { Header, Content, Footer, Sider } = Layout;
 type MenuItem = Required<MenuProps>['items'][number];
 
@@ -56,14 +58,22 @@ const items: MenuItem[] = [
 ]  
 
 function Dashboard() {
+
     return (  
         <>
             <Head>
                 <title>TMU REC | Dashboard</title>
             </Head>
-            <Layout style={{ minHeight: '100vh' }}>
-                <Sider width={300}> 
-                    <Menu onClick={({key}) => nav(key)} mode="inline" items={items}/>
+            <Layout style={{ minHeight: '100vh'}}>
+                <Sider style={{backgroundColor: "#004C9B"}} width={300}> 
+                    
+                    <div style={{ display: "flex", justifyContent: "space-between", flexDirection: "column", height: "100%" }}> 
+                        <div>
+                            <NavHeader />
+                            <Menu onClick={({key}) => nav(key)} mode="inline" items={items}/>
+                        </div>
+                        <SignoutBTN />  
+                    </ div>
                 </Sider>
             </Layout>
         </>

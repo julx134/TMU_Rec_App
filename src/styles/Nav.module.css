@@ -1,0 +1,51 @@
+/* signout */
+.signoutBTN {
+    height: 90px;
+    width: 100%;
+    background-color: #FFB81C;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 15px;
+    cursor: pointer;
+    border-radius: 15px 15px 0px 0px;
+  }
+  
+  .signoutBTN > div {
+    font-size: 30px;
+    color: white;
+    transition: all ease-in 0.2s;
+  }
+  
+  .signoutBTN > h2 {
+    font-weight: 500;
+    color: white;
+    font-size: 1.5rem;
+    transition: all ease-in 0.2s;
+  }
+  
+  .signoutBTN:hover > h2 {
+    color: #004C9B;
+  }
+  
+  .signoutBTN:hover > div {
+    color: #004C9B;
+  }
+  
+  /*nav head*/
+  .navhead {
+    padding: 2rem 0 1rem 0;
+    gap: 20px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+
+  .LOGO {
+    height: 40px;
+  }
+
+  .line {
+    border-bottom: solid 2px #FFB81C;
+    width: 110px;
+  }
