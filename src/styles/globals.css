@@ -45,6 +45,12 @@
   font-size: 1.1rem;
 }
 
+.ant-menu-item-only-child {
+  border-radius: 0px !important;
+  border-left: solid 3px #FFB81C;
+  margin: 0px 0px 0px 0px!important;
+}
+
 
 
 
